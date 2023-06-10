@@ -17,10 +17,12 @@ public class AdressbookTest {
 		ChromeOptions co = new ChromeOptions();
 		
 		
-		co.addArguments("--headless");
-		//co.addArguments("--no-sandbox");
-        co.addArguments("--disable-dev-shm-usage");
-    	co.addArguments("--remote-allow-origins=*");
+		co.addArguments("start-maximized"); // open Browser in maximized mode
+		co.addArguments("disable-infobars"); // disabling infobars
+		co.addArguments("--disable-extensions"); // disabling extensions
+		co.addArguments("--disable-gpu"); // applicable to windows os only
+		co.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+		co.addArguments("--no-sandbox"); // Bypass OS security model
         WebDriver wd = new ChromeDriver(co);
 		wd.get("http://52.53.225.73:8081/addressbooksc/");
 		//wd.get("https://www.flipkart.com/");
