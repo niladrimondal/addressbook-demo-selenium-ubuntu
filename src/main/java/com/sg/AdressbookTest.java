@@ -18,7 +18,7 @@ public class AdressbookTest {
 		
 		
 		co.addArguments("--headless");
-		co.addArguments("--no-sandbox");
+		//co.addArguments("--no-sandbox");
         co.addArguments("--disable-dev-shm-usage");
     	co.addArguments("--remote-allow-origins=*");
         WebDriver wd = new ChromeDriver(co);
