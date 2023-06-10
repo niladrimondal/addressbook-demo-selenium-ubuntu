@@ -16,12 +16,12 @@ public class AdressbookTest {
 		
 		ChromeOptions co = new ChromeOptions();
 		
-		WebDriver wd = new ChromeDriver(co);
+		
 		co.addArguments("--headless");
 		co.addArguments("--no-sandbox");
         co.addArguments("--disable-dev-shm-usage");
     	//co.addArguments("--remote-allow-origins=*");
-		
+        WebDriver wd = new ChromeDriver(co);
 		wd.get("http://52.53.225.73:8081/addressbooksc/");
 		//wd.get("https://www.flipkart.com/");
 		System.out.println("Test Execution Started");
