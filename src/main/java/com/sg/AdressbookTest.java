@@ -11,8 +11,8 @@ public class AdressbookTest {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
-		//System.setProperty("webdriver.chrome.driver", "/home/ubuntu/chromedriver");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/home/ubuntu/chromedriver");
 		
 		ChromeOptions co = new ChromeOptions();
 		
